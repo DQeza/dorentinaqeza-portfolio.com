@@ -212,12 +212,6 @@ body{
     margin: 1rem;
 }
 
-span{
-    color: var(--purple);
-}
-
-
-
 .work .workbox .desc{
     width: 75%;
     text-align: end;
