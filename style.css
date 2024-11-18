@@ -9,6 +9,8 @@
     --light-magenta: #e21b5a;
     --light-green: #61e2c2;
     --light-purple: #d9abff;
+    --white: #ffffff;
+    --light-gray: #555;
 }
 
 
@@ -24,7 +26,7 @@
 
 
 body{
-    background: linear-gradient(45deg, var(--purple),var(--purple-light));
+    background: linear-gradient(45deg, var(--purple), var(--purple-light));
 }
 
 .container{
@@ -56,12 +58,8 @@ body{
 .profile-card .profile-pic{
     margin-top: 15px;
     overflow: hidden;
-    
 }
 
-/* .profile-card .profile-pic img{
-    border-radius: 10px;
-} */
 
 .profile-card .profile-details{
     display: flex;
@@ -185,7 +183,7 @@ body{
     right: -50%;
     width: 45%;
     height: 3px;
-    background: linear-gradient(45deg, #f64c57, #e21b5a);
+    background: linear-gradient(45deg, var(--purple), var(--purple-light));
 }
 
 .about h2{
@@ -214,8 +212,15 @@ body{
     margin: 1rem;
 }
 
+span{
+    color: var(--purple);
+}
+
+
+
 .work .workbox .desc{
     width: 75%;
+    text-align: end;
     color: #555;
 }
 
@@ -227,6 +232,26 @@ body{
 .work .workbox .desc p{
     
     margin:0px
+}
+
+/* Project */
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    width: 47%;
+    height: 20%;
+    color: var(--white);
+    margin: 10px;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card .card-body a:hover{
+    background-color: var(--purple);
 }
 
 /* Responsive Design */
